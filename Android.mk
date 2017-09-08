@@ -14,7 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-ifneq ($(filter athene, $(TARGET_DEVICE)),)
+ifneq ($(filter cats60, $(TARGET_DEVICE)),)
 
 LOCAL_PATH := $(call my-dir)
 
@@ -172,8 +172,8 @@ $(FIRMWARE_WIDEVINE_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 
 ALL_DEFAULT_INSTALLED_MODULES += $(FIRMWARE_WIDEVINE_SYMLINKS)
 
-include device/motorola/athene/tftp.mk
-include device/motorola/athene/expat.mk
+include device/caterpillar/cats60/tftp.mk
+include device/caterpillar/cats60/expat.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
